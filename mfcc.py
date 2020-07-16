@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
@@ -23,5 +24,4 @@ plt.title('MFCC')
 filterbank_features = filterbank_features.T
 plt.matshow(filterbank_features)
 plt.title('Filter bank')
-
 plt.show()
