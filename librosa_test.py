@@ -43,7 +43,7 @@ mfccResult = featureEx(train_file)
 models = train(mfccResult)
 # print(models)
 
-test_x,test_sr = librosa.load("data/testing/apple/Apple.wav");
+test_x,test_sr = librosa.load("data/testing/apple/Apple.wav")
 test_mfcc = librosa.feature.mfcc(test_x,sr=test_sr)
 best_score,best_label = None,None
 for label,model in models.items():
